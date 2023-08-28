@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Taller Mecanico";
+}
+
+<div class="row justify-content-center">
+
+    <div class="col-10">
+
+        <div class="alert alert-info" role="alert">
+            Crud Producto
+        </div>
+        <button type="button" class="btn  btn-outline-success boton-nuevo-producto">Crear Producto</button>
+
+        <table class="table table-striped" id="tablaProductos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>precio</th>
+                    <th>Stok</th>
+                    <th>Categoria</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Producto</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="txtNombreProducto" autocomplete="off">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Precio</label>
+                <input type="text" class="form-control" id="txtPrecioProducto" autocomplete="off">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">cantidad</label>
+                <input type="text" class="form-control" id="txtStok" autocomplete="off">
+            </div>  <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Categoria</label>
+                    <select class="form-select" id="cboDepartamento"></select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary boton-guardar-cambios-producto">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="~/js/Producto.js"></script>
+}
+
+

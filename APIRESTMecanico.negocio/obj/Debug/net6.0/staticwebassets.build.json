@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "xK6QOP4lnSjhAlZaG1M8qx9bTtcrbB8QwFfFX/omaOM=",
+  "Source": "APIRESTMecanico.negocio",
+  "BasePath": "_content/APIRESTMecanico.negocio",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\sugey\\source\\repos\\APIRESTMecanico\\APIRESTMecanico.datos\\APIRESTMecanico.datos.csproj",
+      "Version": 2,
+      "Source": "APIRESTMecanico.datos",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

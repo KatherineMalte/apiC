@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Taller Mecanico";
+}
+
+<div class="row justify-content-center" style="width:100%; height:auto;">
+
+    <div class="col-10">
+
+        <div class="alert alert-info" role="alert">
+            Clientes
+        </div>
+        <button type="button" class="btn  btn-outline-success boton-nuevo-cliente">Crear Cliente</button>
+
+        <table class="table table-striped" id="tablaCliente">
+            <thead>
+                <tr>
+                    <th>Documento</th>
+                    <th>Nombre Cliente</th>
+                    <th>Apellido Cliente</th>
+                    <th>Dir Cliente</th>
+                    <th>Pais Cliente</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Telefono Cliente</th>
+                    <th>Email Cliente</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="modalCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:100%; height:auto;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Cliente</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Documento</label>
+                    <input type="text" class="form-control" id="txtDocumento" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="txtNombre" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="txtApellido" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="txtDir" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Pais</label>
+                    <input type="text" class="form-control" id="txtPais" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Fecha</label>
+                    <input type="text" class="form-control" id="txtFechaN" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="txtTelefono" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control" id="txtEmail" autocomplete="off">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary boton-guardar-cambios-cliente">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Cliente.js"></script>
+}

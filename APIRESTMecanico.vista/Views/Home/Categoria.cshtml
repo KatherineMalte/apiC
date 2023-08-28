@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Taller Mecanico";
+}
+
+<div class="row justify-content-center">
+
+    <div class="col-10">
+
+        <div class="alert alert-info" role="alert">
+            Crud categoria
+        </div>
+        <button type="button" class="btn  btn-outline-success boton-nuevo-categoria">Crear Categoria</button>
+
+        <table class="table table-striped" id="tablaCategoria">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Observacion</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="modalCategoria" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Categoria</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Categoria</label>
+                    <input type="text" class="form-control" id="txtCategoria" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="txtNombre" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Descripcion</label>
+                    <input type="text" class="form-control" id="txtObservacion" autocomplete="off">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary boton-guardar-cambios-categoria">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="~/js/Categoria.js"></script>
+}
+
+

@@ -1,0 +1,175 @@
+﻿@{
+    ViewData["Title"] = "Taller Mecanico";
+}
+
+@*<div class="row justify-content-center">
+
+    <div class="col-10">
+
+        <div class="alert alert-info" role="alert">
+            Clientes
+        </div>
+        <button type="button" class="btn  btn-outline-success boton-nuevo-cliente"> Factura </button>
+
+        <table class="table table-striped" id="tablaCliente">
+            <thead>
+                <tr>
+                    <th>Documento</th>
+                    <th>
+                        N° de factura
+                    </th>
+                    <th>Apellido Cliente</th>
+                    <th>Cliente</th>
+                    <th>nombre cliente</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Telefono Cliente</th>
+                    <th>Fecha Factura</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>*@
+
+<div id="app" class="col-11">
+
+    <h2>Factura</h2>
+
+    <div class="row my-3">
+        <div class="col-10">
+            <h1>Taller Mecanico</h1>
+            <p>Autopista Norte</p>
+            <p>Plaza Orleans 3er. nivel</p>
+            <p>local 312</p>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row fact-info mt-3">
+        <div class="col-3">
+            <h5>Facturar a</h5>
+            <p>
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="txtNombre" autocomplete="off" disabled>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Documento</label>
+                    <input type="text" class="form-control" id="txtDocumento" autocomplete="off">
+                    <button type="button" class="btn  btn-outline-success boton-obtener-cliente">Buscar Cliente</button>
+                </div>
+            </p>
+        </div>
+        <div class="col-3">
+            <h5>Enviar a</h5>
+            <p>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control" id="txtEmail" autocomplete="off" disabled>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="txtDir" autocomplete="off" disabled>
+                </div>
+            </p>
+        </div>
+        <div class="col-3">
+            <h5>N° de factura</h5>
+            <br>
+            <h5>Fecha</h5>
+            <br>
+            <h5>Fecha de vencimiento</h5>
+        </div>
+        <div class="col-3">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="txtNumeroFactura" autocomplete="off" disabled>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="txtFechaGenera" autocomplete="off" disabled>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="txtFechaVence" autocomplete="off" disabled>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row my-5">
+    <table class="table table-borderless factura">
+        <thead>
+            <tr>
+                <th>
+                    <label class="form-label">cant</label>
+                </th>
+                <th>
+                    <label class="form-label">Descripcion</label>
+                </th>
+                <th>
+                    <label class="form-label">Precio Unitario</label>
+                </th>
+                <th>Importe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="txtcant" autocomplete="off">
+                    </div>
+                </th>
+                <th>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="txtDescripcion" autocomplete="off">
+                    </div>
+                </th>
+                <th>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="txtPUnitario" autocomplete="off">
+                    </div>
+                </th>
+                <th>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="txtImporte" autocomplete="off">
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Clases de Salsa</td>
+                <td>4,000.00</td>
+                <td>12,000.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Total Factura</th>
+                <th>RD$15,000.00</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="cond row">
+    <div class="col-12 mt-3">
+        <h4>Condiciones y formas de pago</h4>
+        <p>El pago se debe realizar en un plazo de 15 dias.</p>
+        <p>
+            Banco Banreserva
+            <br />
+            IBAN: DO XX 0075 XXXX XX XX XXXX XXXX
+            <br />
+            Código SWIFT: BPDODOSXXXX
+        </p>
+    </div>
+</div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Index.js"></script>
+    <script src="~/js/Cliente.js"></script>
+    <script src="~/js/Factura.js"></script>
+}

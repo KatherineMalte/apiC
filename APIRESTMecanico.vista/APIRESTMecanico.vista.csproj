@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APIRESTMecanico.datos\APIRESTMecanico.datos.csproj" />
+    <ProjectReference Include="..\APIRESTMecanico.negocio\APIRESTMecanico.negocio.csproj" />
+  </ItemGroup>
+
+</Project>
